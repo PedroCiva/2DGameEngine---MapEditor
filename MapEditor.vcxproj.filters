@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Sprites\tank-tiger-right.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\army-group-1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\army-group-2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\army-group-3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\bandit-spritesheet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\bullet-enemy.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\bullet-friendly.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\chopper-sinngle.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\chopper-spritesheet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\collision-texture.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\heliport.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\HelpScreenLevel1Jungle.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\HelpScreenLevel2Desert.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\obstacles.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\radar.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\rock-big-1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\rock-big-2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\rock-big-3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\rock-big-4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\rock-small-1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\SecondLevelHelpScreen.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\start.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\tank-big-down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\tank-big-left.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\tank-big-right.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\tank-small-left.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\tank-small-right.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\tree-small-1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\tree-small-2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\tree-small-3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\tree-small-4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\tree-small-5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\tree-small-6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\tree-small-7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\tree-small-8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\truck-down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\truck-left.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sprites\truck-right.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Editor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Asset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AssetManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UserControl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Editor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AssetManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Asset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UserControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Structs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TextureManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
