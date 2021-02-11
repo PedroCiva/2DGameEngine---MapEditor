@@ -4,17 +4,26 @@
 
 void UserControl::ProcessInput()
 {
-	for (auto asset : AssetManager::GetInstance()->assets)
+	SDL_PumpEvents();
+	SDL_GetMouseState(&mousePos.x, &mousePos.y);
+	if (SDL_GetMouseState(NULL, NULL) & SDL_BUTTON(SDL_BUTTON_LEFT)) 
 	{
-		//Fetch mouse position
-		SDL_PumpEvents();
-		SDL_GetMouseState(&mousePos.x, &mousePos.y);
-		//To-Do
-		//Add a for loop to loop through the destination rects (positions) of all sprites and check
-		if ((mousePos.x - 10 >= asset.second->destRect.x - 20 && mousePos.x - 10 <= asset.second->destRect.x + 20) && (mousePos.y - 10 >= asset.second->destRect.y - 20 && mousePos.y - 10 <= asset.second->destRect.y + 20))
+		for (auto asset : AssetManager::GetInstance()->assets)
 		{
-			if (SDL_GetMouseState(NULL, NULL) & SDL_BUTTON(SDL_BUTTON_LEFT)) {
+			if ((mousePos.x - 10 >= asset.second->destRect.x - 20 && mousePos.x - 10 <= asset.second->destRect.x + 20) && (mousePos.y - 10 >= asset.second->destRect.y - 20 && mousePos.y - 10 <= asset.second->destRect.y + 20))
+			{
 				DragAndDrop(asset.second->destRect);
+			}
+		}	
+	}
+	else if (SDL_GetMouseState(NULL, NULL) & SDL_BUTTON(SDL_BUTTON_RIGHT))
+	{
+		for (auto asset : AssetManager::GetInstance()->assets)
+		{
+			if ((mousePos.x - 10 >= asset.second->destRect.x - 20 && mousePos.x - 10 <= asset.second->destRect.x + 20) && (mousePos.y - 10 >= asset.second->destRect.y - 20 && mousePos.y - 10 <= asset.second->destRect.y + 20))
+			{
+				asset.second->Destroy();
+				break;
 			}
 		}
 	}
@@ -25,3 +34,4 @@ void UserControl::DragAndDrop(SDL_Rect &destRect)
 	destRect.x = mousePos.x - 10;
 	destRect.y = mousePos.y - 10;
 }
+

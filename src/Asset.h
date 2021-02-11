@@ -12,15 +12,17 @@ private:
 
 
 public:
-	Asset(string name, string spritePath,int posX, int posY);
+	Asset(string name, string spritePath,int posX, int posY,bool isReference);
 	~Asset();
 	string name;
 
+	bool isReference; // Is this asset the mother of all?
 	bool isPlaced; //Has this asset been placed on the map or not
 	bool isDraggable; //Is this asset draggable?
 	bool isSelectable; //Is this asset selectable?
 
 	void Render();
+	void Destroy();
 
 	//Should I be initializing these values here?
 	SDL_Rect sourceRect{

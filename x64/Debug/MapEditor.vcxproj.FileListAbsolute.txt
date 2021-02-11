@@ -1,0 +1,2 @@
+E:\Programming Studies\SDL Studies\MapEditor\x64\Debug\MapEditor.exe
+E:\Programming Studies\SDL Studies\MapEditor\x64\Debug\MapEditor.pdb

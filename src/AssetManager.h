@@ -20,7 +20,7 @@ public:
 	std::unordered_map<std::string, Asset*> assets;
 
 
-	void AddAsset(std::string name, std::string spritePath, int posX, int posY);
+	void AddAsset(std::string name, std::string spritePath, int posX, int posY,bool isReference);
 	Asset* GetAsset(std::string id);
 
 };

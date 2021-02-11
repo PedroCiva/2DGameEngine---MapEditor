@@ -23,6 +23,7 @@ public:
 	//Initializes SDL window
 	void Initialize(int width, int height, int levelID);
 	void ProcessInput();
+	void LoadEditor();
 	void LoadLevel(int levelID);
 	void Update();
 	void Render();

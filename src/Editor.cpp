@@ -35,7 +35,6 @@ void Editor::Initialize(int width,int height, int levelID)
 		return;
 	}
 		
-	
 
 	window = SDL_CreateWindow("Map Editor", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, NULL);
 	if (!window) 
@@ -54,7 +53,7 @@ void Editor::Initialize(int width,int height, int levelID)
 		return;
 	}
 
-	LoadLevel(levelID);
+	LoadEditor();
 	this->isRunning = true;
 }
 
@@ -100,9 +99,11 @@ void::Editor::HandleCameraMovement()
 	//To-Do
 }
 
-void Editor::LoadLevel(int levelID)
+//Loads main editor
+void Editor::LoadEditor()
 {
-	AssetManager::GetInstance()->AddAsset("tank1", "Sprites/tank-tiger-right.png", 500, 500);
+	AssetManager::GetInstance()->AddAsset("tank_Main", "Sprites/tank-tiger-right.png", 500, 500,true);
+	//AssetManager::GetInstance()->AddAsset("tile1_Main","Sprites)
 }
 
 
