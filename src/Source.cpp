@@ -1,5 +1,6 @@
 #include <iostream>
 #include "UserControl.h"
+#include "MapWindow.h"
 #include "Editor.h"
 using namespace std;
 
@@ -19,7 +20,10 @@ int main(int argc, char* argv[])
 		editor.Update();
 		editor.Render();
 		userControl.ProcessInput();
+		Methods::GetRelativeMousePosition(editor.mapWindow.windowRect);
 	}
+
+
 
 	return 0;
 }

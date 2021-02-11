@@ -1,9 +1,12 @@
 #include "Editor.h"
 #include "AssetManager.h"
 #include "Asset.h"
+#include "MapWindow.h"
 #include <SDL_ttf.h>
 
 using namespace std;
+
+MapWindow Editor::mapWindow(300, 25, 400, 400);
 
 Editor::Editor() 
 {
@@ -89,6 +92,9 @@ void Editor::Render()
 	{
 		asset.second->Render();
 	}
+
+	SDL_SetRenderDrawColor(renderer, 169, 169, 169, 255);
+	mapWindow.Render(renderer);
 
 	//Swap backbuffer
 	SDL_RenderPresent(renderer);

@@ -1,5 +1,5 @@
 ﻿  Editor.cpp
+  Source.cpp
   UserControl.cpp
-E:\Programming Studies\SDL Studies\MapEditor\src\Structs.h(12,3): warning C4091: 'static ': ignored on left of 'vec2' when no variable is declared
   Generating Code...
   MapEditor.vcxproj -> E:\Programming Studies\SDL Studies\MapEditor\Debug\MapEditor.exe

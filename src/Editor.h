@@ -4,6 +4,8 @@
 #include <iostream>
 
 //Contains all basic methods and variables for the main loop
+class MapWindow;
+
 class Editor
 {
 private:
@@ -19,6 +21,7 @@ public:
 	inline static SDL_Renderer* renderer;
 	static SDL_Event eventHandler;
 	static SDL_Rect camera;
+	static MapWindow mapWindow;
 
 	//Initializes SDL window
 	void Initialize(int width, int height, int levelID);
